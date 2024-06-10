@@ -22,15 +22,14 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║    ◉— *PolvoraBot* —◉
+║    ◉— *AkiraBot* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ *𝗛ola, ${taguser}*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *Owner:* PolvoraBot
-║➤ *Numero:* wa.me/573178206163
-║➤ *Creador 1:* wa.me/56954390663
-║➤ *Creador 2:* wa.me/56945086055
-║➤ *Instagram:* https://www.instagram.com/polvora6969
+║➤ *Owner:* Akira
+║➤ *Numero:* wa.me/56945843173
+║➤ *Creador 1:* wa.me/56945843173
+║➤ *Instagram:* https://www.instagram.com/xs.kanekii
 ║➤ *Fecha:* ${date}
 ║➤ *Tiempo activo:* ${uptime}
 ║➤ *Usuarios regs:* ${rtotalreg}
@@ -44,7 +43,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┣ *🧰 Experiencia:* ${exp}
 ┣ *⚓ Rango:* ${role}
 ┣ *💎 Diamantes:* ${limit}
-┣ *👾 PolvoraCoins:* ${money}
+┣ *👾 Coins:* ${money}
 ┣ *🪙 Tokens:* ${joincount}
 ┣ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
 ┗━━━━━━━━━━━━━━━━┛
