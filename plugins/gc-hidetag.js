@@ -9,7 +9,7 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
     await conn.relayMessage(m.chat, msg.message, {messageId: msg.key.id});
   } catch {
     /**
-[ By @NeKosmic || https://github.com/NeKosmic/ ]
+[ By @xs.akiraa || https://github.com/AkiraaX2/Akiraa ]
 **/
 
     const users = participants.map((u) => conn.decodeJid(u.id));
@@ -32,7 +32,7 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
       var mediax = await quoted.download?.();
       conn.sendMessage(m.chat, {sticker: mediax, mentions: users}, {quoted: m});
     } else {
-      await conn.relayMessage(m.chat, {extendedTextMessage: {text: `${masss}\n${htextos}\n`, ...{contextInfo: {mentionedJid: users, externalAdReply: {thumbnail: imagen1, sourceUrl: 'https://www.instagram.com/ceogeripium.dzn'}}}}}, {});
+      await conn.relayMessage(m.chat, {extendedTextMessage: {text: `${masss}\n${htextos}\n`, ...{contextInfo: {mentionedJid: users, externalAdReply: {thumbnail: imagen1, sourceUrl: 'https://www.instagram.com/xs.akiraa'}}}}}, {});
     }
   }
 };
