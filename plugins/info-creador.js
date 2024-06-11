@@ -3,7 +3,7 @@ const handler = async (m, {conn, usedPrefix}) => {
   const document = doc[Math.floor(Math.random() * doc.length)];
   const text = `*—◉ 𝙴𝙻 𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴 𝙼𝙸 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙴𝚂 wa.me/56945843173*`.trim();
   const buttonMessage= {
-    'document': {url: `https://www.instagram.com/ceogeripium.dzn`},
+    'document': {url: `https://www.instagram.com/xs.akiraa`},
     'mimetype': `application/${document}`,
     'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
     'fileLength': 99999999999999,
@@ -12,7 +12,7 @@ const handler = async (m, {conn, usedPrefix}) => {
       'forwardingScore': 200,
       'isForwarded': true,
       'externalAdReply': {
-        'mediaUrl': 'https://www.instagram.com/xs.kanekii',
+        'mediaUrl': 'https://www.instagram.com/xs.akiraa',
         'mediaType': 2,
         'previewType': 'pdf',
         'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
