@@ -1184,7 +1184,7 @@ const messageText = `
 —◉ *Aviso ${messageNumber}/3 (Total: 3)*
 —◉ ${user.bannedReason ? `\n*Motivo:* ${user.bannedReason}` : '*Motivo:* Sin especificar'}
 —◉ *Si consideras que esto es un error y cuentas con pruebas, puedes comunicarte con el propietario del Bot para apelar la suspensión.*
-—◉ *Contacto para apelaciones:* wa.me/51955095498
+—◉ *Contacto para apelaciones:* wa.me/56945843173
 ╚═════════════════════╝
                `.trim();
               m.reply(messageText);
@@ -1500,7 +1500,7 @@ export async function callUpdate(callUpdate) {
         const callmsg = await mconn.conn.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, {mentions: [nk.from]});
         // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
         // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Richetti;;;\nFN:Richetti\nORG:Richetti\nTITLE:\nitem1.TEL;waid=51955095498:+51955095498\nitem1.X-ABLabel:Richetti\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:Richetti\nEND:VCARD`;
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;Akiraa;;;\nFN:Akiraa\nORG:Akiraa\nTITLE:\nitem1.TEL;waid=56945843173:+56945843173\nitem1.X-ABLabel:Richetti\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:Richetti\nEND:VCARD`;
         await mconn.conn.sendMessage(nk.from, {contacts: {displayName: 'Richetti', contacts: [{vcard}]}}, {quoted: callmsg});
         await mconn.conn.updateBlockStatus(nk.from, 'block');
       }
@@ -1539,19 +1539,19 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-        rowner: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝐏𝐎𝐋𝐕𝐎𝐑𝐀 𝐁𝐎𝐓 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐄𝐋/𝐋𝐀 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎/𝐀 (𝐎𝐖𝐍𝐄𝐑) 𝐃𝐄𝐋 𝐁𝐎𝐓',
-        owner: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝐏𝐎𝐋𝐕𝐎𝐑𝐀 𝐁𝐎𝐓 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐄𝐋/𝐋𝐀 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎/𝐀 (𝐎𝐖𝐍𝐄𝐑) 𝐃𝐄𝐋 𝐁𝐎𝐓*',
-        mods: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝐏𝐎𝐋𝐕𝐎𝐑𝐀 𝐁𝐎𝐓 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐄𝐋/𝐋𝐀 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎/𝐀 (𝐎𝐖𝐍𝐄𝐑) 𝐃𝐄𝐋 𝐁𝐎𝐓*',
-        premium: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝐏𝐎𝐋𝐕𝐎𝐑𝐀 𝐁𝐎𝐓 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐄𝐋/𝐋𝐀 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎/𝐀 (𝐎𝐖𝐍𝐄𝐑) 𝐃𝐄𝐋 𝐁𝐎𝐓*',
-        group: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝐏𝐎𝐋𝐕𝐎𝐑𝐀 𝐁𝐎𝐓 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐄𝐍 𝐆𝐑𝐔𝐏𝐎𝐒*',
+        rowner: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] Akira Bot 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐄𝐋/𝐋𝐀 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎/𝐀 (𝐎𝐖𝐍𝐄𝐑) 𝐃𝐄𝐋 𝐁𝐎𝐓',
+        owner: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] Akira Bot 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐄𝐋/𝐋𝐀 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎/𝐀 (𝐎𝐖𝐍𝐄𝐑) 𝐃𝐄𝐋 𝐁𝐎𝐓*',
+        mods: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] Akira Bot 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐄𝐋/𝐋𝐀 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎/𝐀 (𝐎𝐖𝐍𝐄𝐑) 𝐃𝐄𝐋 𝐁𝐎𝐓*',
+        premium: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] Akira Bot 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐄𝐋/𝐋𝐀 𝐏𝐑𝐎𝐏𝐈𝐄𝐓𝐀𝐑𝐈𝐎/𝐀 (𝐎𝐖𝐍𝐄𝐑) 𝐃𝐄𝐋 𝐁𝐎𝐓*',
+        group: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] Akira Bot 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐄𝐍 𝐆𝐑𝐔𝐏𝐎𝐒*',
         private: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝐏𝐎𝐋𝐕𝐎𝐑𝐀 𝐁𝐎𝐓 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐄𝐍 𝐂𝐇𝐀𝐓 𝐏𝐑𝐈𝐕𝐀𝐃𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓*',
-        admin: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝐏𝐎𝐋𝐕𝐎𝐑𝐀 𝐁𝐎𝐓 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐀𝐃𝐌𝐈𝐍𝐒 𝐃𝐄𝐋 𝐆𝐑𝐔𝐏𝐎*',
-        botAdmin: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝐏𝐎𝐋𝐕𝐎𝐑𝐀 𝐁𝐎𝐓 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐏𝐀𝐑𝐀 𝐏𝐎𝐃𝐄𝐑 𝐔𝐒𝐀𝐑 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐄𝐒 𝐍𝐄𝐂𝐄𝐒𝐀𝐑𝐈𝐎 𝐐𝐔𝐄 𝐄𝐋 𝐁𝐎𝐓 𝐒𝐄𝐀 𝐀𝐃𝐌𝐈𝐍, 𝐀𝐒𝐂𝐄𝐍𝐃𝐄𝐑 𝐀 𝐀𝐃𝐌𝐈𝐍 𝐄𝐒𝐓𝐄 𝐍𝐔𝐌𝐄𝐑𝐎*',
-        unreg: '*[ 🛑 𝐏𝐎𝐋𝐕𝐎𝐑𝐀 𝐁𝐎𝐓 𝐓𝐄 𝐀𝐕𝐈𝐒𝐀 𝐐𝐔𝐄 𝐍𝐎 𝐄𝐒𝐓𝐀𝐒 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐀𝐃𝐎 🛑 ]*\n\n*—◉ 𝙿𝙰𝚁𝙰 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙳𝙴𝙱𝙴𝚂 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝚁𝚃𝙴, 𝚄𝚂𝙰 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾*\n*➣ /reg nombre.edad*',
+        admin: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] Akira Bot 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐒𝐎𝐋𝐎 𝐏𝐔𝐄𝐃𝐄 𝐒𝐄𝐑 𝐔𝐓𝐈𝐋𝐈𝐙𝐀𝐃𝐎 𝐏𝐎𝐑 𝐀𝐃𝐌𝐈𝐍𝐒 𝐃𝐄𝐋 𝐆𝐑𝐔𝐏𝐎*',
+        botAdmin: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] Akira Bot 𝐀𝐃𝐕𝐈𝐄𝐑𝐓𝐄 𝐐𝐔𝐄 𝐏𝐀𝐑𝐀 𝐏𝐎𝐃𝐄𝐑 𝐔𝐒𝐀𝐑 𝐄𝐒𝐓𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎 𝐄𝐒 𝐍𝐄𝐂𝐄𝐒𝐀𝐑𝐈𝐎 𝐐𝐔𝐄 𝐄𝐋 𝐁𝐎𝐓 𝐒𝐄𝐀 𝐀𝐃𝐌𝐈𝐍, 𝐀𝐒𝐂𝐄𝐍𝐃𝐄𝐑 𝐀 𝐀𝐃𝐌𝐈𝐍 𝐄𝐒𝐓𝐄 𝐍𝐔𝐌𝐄𝐑𝐎*',
+        unreg: '*[ 🛑 Akira Bot 𝐓𝐄 𝐀𝐕𝐈𝐒𝐀 𝐐𝐔𝐄 𝐍𝐎 𝐄𝐒𝐓𝐀𝐒 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐀𝐃𝐎 🛑 ]*\n\n*—◉ 𝙿𝙰𝚁𝙰 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙳𝙴𝙱𝙴𝚂 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝚁𝚃𝙴, 𝚄𝚂𝙰 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾*\n*➣ /reg nombre.edad*',
         restrict: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂𝚃𝙰 𝚁𝙴𝚂𝚃𝚁𝙸𝙽𝙶𝙸𝙳𝙾/𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾 𝙿𝙾𝚁 𝙳𝙴𝚂𝙸𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*'
          }[type]
     let aa = { quoted: m, userJid: conn.user.jid }
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: 'MichiBot', thumbnail: imagen1, sourceUrl: 'https://www.instagram.com/ceogeripium.dzn'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: 'AkiraaBot', thumbnail: imagen1, sourceUrl: 'https://www.instagram.com/xs.akiraa'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 
