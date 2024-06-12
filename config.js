@@ -11,6 +11,7 @@ global.botnumber = ""
 
 global.owner = [
   ['56945843173', 'Akiraa', true],
+  ['5491140951814', 'colaborador', true]
 ];
 
 global.suittag = ['56945843173'];
